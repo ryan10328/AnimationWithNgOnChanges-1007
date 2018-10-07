@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'animation-lab1007';
+  obj: any = {
+    num: 0
+  };
+
+  plus() {
+    this.obj.num++;
+  }
+
+  minus() {
+    this.obj.num--;
+  }
+
 }
